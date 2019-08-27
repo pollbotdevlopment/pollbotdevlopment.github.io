@@ -1,3 +1,5 @@
+config.json
+node_modules/*
 # Windows
 Thumbs.db
 ehthumbs.db

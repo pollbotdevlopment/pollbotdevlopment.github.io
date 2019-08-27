@@ -1,0 +1,187 @@
+@font-face {
+        font-family: GROBOLD;
+        src: url(/assets/GROBOLD.ttf);
+}
+
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+body, .container .container-tab.embed .input .input-section textarea {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    padding: 15px 20px;
+    border-bottom: 1px solid #1976D2;
+}
+.navigation .nav-branding {
+    display: inline-flex;
+    margin-left: 20px;
+}
+.navigation .nav-branding-home {
+    display: flex;
+    text-decoration: none;
+}
+.navigation .nav-branding .nav-brand {
+    display: inline-flex;
+    margin: 5px;
+    height: 60px;
+}
+.navigation .nav-branding .nav-brand-name {
+    display: inline-flex;
+    height: 30px;
+    padding: 0;
+    margin: 20px 6px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #1976D2;
+    font-family: Grobold;
+}
+.navigation .nav-list.right {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.navigation .nav-list {
+    display: inline-flex;
+    list-style-type: none;
+    margin-left: 40px;
+}
+.navigation .nav-list li {
+    position: relative;
+    display: inline-flex;
+    transition: background-color .5s ease;
+}
+.navigation .nav-list li > a {
+    display: inline-flex;
+    padding: 8px 18px;
+    margin: 10px 0;
+    height: 34px;
+    line-height: 34px;
+    color: #1976D2;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+.navigation .nav-list li > a:hover {
+    color: #233e58;
+}
+.navigation .nav-list li img {
+    display: inline-flex;
+    margin: 4px 4px;
+    height: 26px;
+}
+.navigation .nav-list li.dropdown {
+    display: inline-flex;
+}
+.navigation .nav-list li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    min-width: 160px;
+    box-shadow: 0px 0px 5px 0px #8c8c8c33;
+    border: 1px solid #8c8c8c33;
+    background-color: white;
+    z-index: 1;
+}
+.navigation .nav-list li.dropdown .dropdown-content::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+.navigation .nav-list li.dropdown .dropdown-content::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: -1px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 11px solid;
+    border-bottom-color: #8c8c8c56;
+}
+.navigation .nav-list li.dropdown .dropdown-content a {
+    display: flex;
+    padding: 4px 10px;
+    height: 24px;
+    line-height: 24px;
+    color: #1976D2;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+.navigation .nav-list li.dropdown .dropdown-content a:hover {
+    color: #233e58;
+}
+.navigation .nav-list li:hover .dropdown-content {
+    display: block;
+}
+.navigation .nav-list li.dropdown .dropdown-content .divider {
+    border-bottom: 1px solid #1976D2;
+    margin: 4px 8px;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+.container .left-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    padding: 20px;
+    border-right: 1px solid #1976D2;
+}
+.container .left-navigation .left-nav-grow {
+    flex-flow: 1;
+}
+.container .left-navigation .nav-group {
+    margin-bottom: 40px;
+}
+.container .left-navigation .nav-group .nav-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: #1976D2;
+}
+.container .left-navigation .nav-group .nav-items {
+
+}
+
+.container .left-navigation .nav-group .nav-items a {
+    display: flex;
+    margin: 16px 0;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1976D2;
+    transition: color .5s ease;
+}
+.container .left-navigation .nav-group .nav-items a:hover {
+    color: #233e58;
+}
+.container .left-navigation .nav-group .nav-items a i {
+    margin-right: 15px;
+}
+.container .content {
+    flex-grow: 1;
+    padding: 30px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://typicalbot.com/">
+    <meta property="og:title" content="TypicalBot – The Ultimate Discord Bot">
+    <meta property="og:description"
+        content="Built upon over a year of experience, TypicalBot is the ironically-named bot that is far from typical.">
+    <meta property="og:site_name" content="TypicalBot">
+    <meta property="og:image" content="https://typicalbot.com/x/images/icon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="icon" href="/assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <title>Home – TypicalBot</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="nav-branding">
+            <a class="nav-branding-home" href="/">
+                <img class="nav-brand" src="../assets/icon.png" />
+                <p class="nav-brand-name">TypicalBot</p>
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li><a>A Button</a></li>
+            <li><a>Another Button</a></li>
+        </ul>
+        <ul class="nav-list right">
+            <li><a>Third Button</a></li>
+            <% if (auth) { %>
+            <li class="dropdown">
+                <a><img src="https://typicalbot.com/x/images/icon.png" /></a>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <div class="divider"></div>
+                    <a href="#">Administration</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </li>
+            <% } else { %>
+            <li><a href="/auth/login">Log In</a></li>
+            <% } %>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="left-navigation">
+            <div class="left-nav-grow">
+                <div class="nav-group">
+                    <p class="nav-title">Group 1</p>
+                    <div class="nav-items">
+                        <a><i class="fas fa-tachometer-alt"></i>Thing 1</a>
+                        <a><i class="fas fa-tachometer-alt"></i>Thing 2</a>
+                    </div>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-title">Group 2</p>
+                    <div class="nav-items">
+                        <a><i class="fas fa-tachometer-alt"></i>Thing 3</a>
+                        <a><i class="fas fa-tachometer-alt"></i>Thing 4</a>
+                    </div>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-title">Account</p>
+                    <div class="nav-items">
+                        <a><i class="fas fa-tachometer-alt"></i>Settings</a>
+                        <a><i class="fas fa-tachometer-alt"></i>Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Content</h1>
+            <h1>Content</h1>
+        </div>
+    </div>
+
+    <script src="https://59dvjpn9f5l6.statuspage.io/embed/script.js"></script>
+</body>
+
+</html>
